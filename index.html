@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alura Challenge 1</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <!-- logo alura arriba izquierda -->
+    <img class="logo" src="img/logoAlura.png" alt="img logo Alura">
+  </header>
+
+  <main>
+    <section>
+      <!-- campo para el texto a encriptar / desencriptar -->
+      <textarea name="textArea" id="textArea" rows="10" cols="30" class="textArea"
+        placeholder="Ingrese texto a encriptar"></textarea>
+
+      <div>
+        <!-- leyenda "solo letras minusculas y sin acentros"-->
+        <h6><img src="img/bi_exclamation-circle-fill.png" alt="exclamation circle fill"> Solo letras minúsculas y sin
+          acentos</h6>
+      </div>
+
+      <div class="botones">
+        <button id="btnCrypt" class="encBtn">Encriptar</button>
+        <button id="btnDecrypt" class="decBtn">Desencriptar</button>
+      </div>
+
+    </section>
+
+    <section>
+      <!-- texto encriptado / desencriptado  -->
+
+      <textarea class="respuesta" name="respuesta" id="" cols="20" rows="10"></textarea>
+      <div class="warning" id="warning">
+        <h2>Ningún mensaje fue encontrado</h2>
+        <h4>Ingresa el texto que desees encriptar o desencriptar.</h4>
+      </div>
+
+      <div>
+        <!-- if enc / dec true add btn copy-->
+        <button class="copiar" onclick="copiar()">Copiar</button>
+      </div>
+
+    </section>
+
+
+
+
+    <!--    <p>El texto encriptado ahora es: <span class="encrypted"></span></p>
+
+    <p>El texto desencriptado ahora es: <span class="decrypted"></span></p> -->
+
+  </main>
+
+
+  <footer>
+    <!-- c y datos del desarrollador -->
+    <p class="footer">©️ 2022 - Sebastián Berizonce</p>
+
+  </footer>
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>
